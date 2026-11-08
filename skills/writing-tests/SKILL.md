@@ -24,7 +24,7 @@ Each test has a permanent cost: runtime, flakiness, and edits on every refactor.
 - Mocks of fast code you own: use the real thing or a fake. Mock only slow or nondeterministic boundaries (network, clock, randomness).
 - Near-duplicates that always fail together.
 
-Litmus: a behavior-preserving refactor breaks zero tests; a real bug breaks at least one.
+Litmus: a behavior-preserving refactor breaks zero tests; a real bug breaks at least one. A test you never saw fail is unproven: confirm it goes red when the behavior breaks.
 
 ## Shape
 - One behavior per test; the name states it. Plain asserts with clear failure output.
